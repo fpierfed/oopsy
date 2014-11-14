@@ -1,0 +1,11 @@
+%include <head.h>
+echo "I will now sleep for %SLEEP% + 100 seconds"
+sleep %SLEEP%
+n=0
+while [[ $n -le 95 ]]               # Loop 100 times
+do
+   sleep 1                           # Wait a short time
+   (( n = $n + 5 ))
+   ecflow_client --meter progress $n # Notify ecFlow
+done
+%include <tail.h>

@@ -1,0 +1,106 @@
++ ECF_PORT=2500
++ export ECF_PORT
++ ECF_NODE=localhost
++ export ECF_NODE
++ ECF_NAME=/test/f1/t1
++ export ECF_NAME
++ ECF_PASS=NaM3cvPJ
++ export ECF_PASS
++ ECF_TRYNO=1
++ export ECF_TRYNO
++ ECF_RID=6534
++ export ECF_RID
++ PATH=/usr/local/apps/ecflow/4.0.5/bin:/ecmwf/bin:/home/dafp/venvs/oops/bin:/home/dafp/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
++ export PATH
++ ecflow_client '--init=6534'
++ trap ERROR 0
++ trap '{ echo "Killed by a signal"; ERROR ; }' 1 2 3 4 5 6 7 8 10 12 13 15
++ echo 'I will now sleep for 5 + 100 seconds'
+I will now sleep for 5 + 100 seconds
++ sleep 5
++ n=0
++ [[ 0 -le 95 ]]
++ sleep 1
++ (( n = 0 + 5 ))
++ ecflow_client --meter progress 5
++ [[ 5 -le 95 ]]
++ sleep 1
++ (( n = 5 + 5 ))
++ ecflow_client --meter progress 10
++ [[ 10 -le 95 ]]
++ sleep 1
++ (( n = 10 + 5 ))
++ ecflow_client --meter progress 15
++ [[ 15 -le 95 ]]
++ sleep 1
++ (( n = 15 + 5 ))
++ ecflow_client --meter progress 20
++ [[ 20 -le 95 ]]
++ sleep 1
++ (( n = 20 + 5 ))
++ ecflow_client --meter progress 25
++ [[ 25 -le 95 ]]
++ sleep 1
++ (( n = 25 + 5 ))
++ ecflow_client --meter progress 30
++ [[ 30 -le 95 ]]
++ sleep 1
++ (( n = 30 + 5 ))
++ ecflow_client --meter progress 35
++ [[ 35 -le 95 ]]
++ sleep 1
++ (( n = 35 + 5 ))
++ ecflow_client --meter progress 40
++ [[ 40 -le 95 ]]
++ sleep 1
++ (( n = 40 + 5 ))
++ ecflow_client --meter progress 45
++ [[ 45 -le 95 ]]
++ sleep 1
++ (( n = 45 + 5 ))
++ ecflow_client --meter progress 50
++ [[ 50 -le 95 ]]
++ sleep 1
++ (( n = 50 + 5 ))
++ ecflow_client --meter progress 55
++ [[ 55 -le 95 ]]
++ sleep 1
++ (( n = 55 + 5 ))
++ ecflow_client --meter progress 60
++ [[ 60 -le 95 ]]
++ sleep 1
++ (( n = 60 + 5 ))
++ ecflow_client --meter progress 65
++ [[ 65 -le 95 ]]
++ sleep 1
++ (( n = 65 + 5 ))
++ ecflow_client --meter progress 70
++ [[ 70 -le 95 ]]
++ sleep 1
++ (( n = 70 + 5 ))
++ ecflow_client --meter progress 75
++ [[ 75 -le 95 ]]
++ sleep 1
++ (( n = 75 + 5 ))
++ ecflow_client --meter progress 80
++ [[ 80 -le 95 ]]
++ sleep 1
++ (( n = 80 + 5 ))
++ ecflow_client --meter progress 85
++ [[ 85 -le 95 ]]
++ sleep 1
++ (( n = 85 + 5 ))
++ ecflow_client --meter progress 90
++ [[ 90 -le 95 ]]
++ sleep 1
++ (( n = 90 + 5 ))
++ ecflow_client --meter progress 95
++ [[ 95 -le 95 ]]
++ sleep 1
++ (( n = 95 + 5 ))
++ ecflow_client --meter progress 100
++ [[ 100 -le 95 ]]
++ wait
++ ecflow_client --complete
++ trap 0
++ exit 0
